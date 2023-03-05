@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Once)
+    music.startMelody(music.builtInMelody(Melodies.Birthday), MelodyOptions.Forever)
     basic.showString("Joyeux Anniversaire!")
     basic.clearScreen()
     basic.showLeds(`
@@ -65,6 +65,7 @@ input.onButtonPressed(Button.A, function () {
         . # . # .
         . . # . .
         `)
+    music.stopAllSounds()
     basic.pause(100)
     basic.showLeds(`
         . . . # .
