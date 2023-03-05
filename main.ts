@@ -82,3 +82,10 @@ input.onButtonPressed(Button.A, function () {
         . . # . .
         `)
 })
+input.onButtonPressed(Button.B, function () {
+    music.startMelody(music.builtInMelody(Melodies.Ringtone), MelodyOptions.Once)
+    basic.showIcon(IconNames.Heart)
+    basic.showIcon(IconNames.Happy)
+    basic.showIcon(IconNames.Surprised)
+    basic.showIcon(IconNames.Heart)
+})
